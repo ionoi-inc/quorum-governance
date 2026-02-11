@@ -1,0 +1,46 @@
+{
+  "name": "quorum-governance",
+  "version": "1.0.0",
+  "description": "Production-ready Solidity smart contract implementing agent-based governance with weighted voting, quorum enforcement, and proposal execution",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+    "setup-agents": "hardhat run scripts/setup-agents.js",
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "node": "hardhat node"
+  },
+  "keywords": [
+    "governance",
+    "dao",
+    "voting",
+    "quorum",
+    "smart-contracts",
+    "solidity",
+    "ethereum",
+    "blockchain",
+    "agent-based",
+    "weighted-voting"
+  ],
+  "author": "dutchiono",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "chai": "^4.3.10",
+    "ethers": "^6.9.0",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
